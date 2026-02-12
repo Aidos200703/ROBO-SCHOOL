@@ -1,0 +1,1064 @@
+@font-face {
+  font-family: "Jost-Bold";
+  font-weight: 700;
+  src: url(../public/fonts/Jost/static/Jost-Bold.ttf);
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Jost-SemiBold";
+  font-weight: 600;
+  src: url(../public/fonts/Jost/static/Jost-SemiBold.ttf);
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Jost-Regular";
+  font-weight: 400;
+  src: url(../public/fonts/Jost/static/Jost-Regular.ttf);
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body.active {
+  overflow-y: hidden;
+}
+
+/* WELCOME-PAGE START */
+
+.welcome-page {
+  background-color: rgba(20, 16, 36, 1);
+  height: clamp(617px, 64vw, 1040px);
+  padding-top: clamp(10px, 2vw, 30px);
+  padding-bottom: 0px;
+}
+
+header {
+  align-items: center;
+  display: flex;
+  max-width: 1720px;
+  margin: 0 auto;
+  padding: 0 clamp(10px, 2vw, 100px);
+  justify-content: space-between;
+}
+
+.btn-active {
+  display: none;
+}
+
+.logo h2 a {
+  font-family: "Jost-Bold";
+  font-weight: 700;
+  font-size: clamp(18px, 3vw, 30px);
+  color: rgba(255, 255, 255, 1);
+}
+
+.list {
+  max-width: 324px;
+  display: flex;
+}
+
+.list ul {
+  display: flex;
+  width: clamp(200px, 35vw, 325px);
+  justify-content: space-between;
+}
+
+.list ul li {
+  font-family: "Jost-Regular";
+  font-weight: 300;
+  list-style: none;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.link a {
+  color: rgba(255, 255, 255, 1);
+  font-size: 20px;
+}
+
+.phone-number {
+  width: clamp(150px, 27vw, 255px);
+}
+
+.phone-number a {
+  font-family: "Jost-SemiBold";
+  font-weight: 600;
+  display: flex;
+  width: clamp(150px, 27vw, 255px);
+  flex-wrap: nowrap;
+  font-size: clamp(18px, 3vw, 30px);
+  color: rgba(255, 255, 255, 1);
+}
+
+.main-banner {
+  width: clamp(300px, 100vw, 1540px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: clamp(47px, 0.46vw, 100px);
+  padding-left: clamp(10px, 2vw, 100px);
+  padding-right: clamp(10px, 2vw, 100px);
+  padding-bottom: 0px;
+}
+
+.hero-text {
+  padding-left: clamp(0px, 6vw, 110px);
+  width: clamp(300px, 50vw, 630px);
+}
+
+.title-hero {
+  font-family: "Jost-SemiBold";
+  font-weight: 600;
+  font-size: clamp(30px, 5vw, 70px);
+  color: rgba(255, 255, 255, 1);
+  padding-bottom: clamp(10px, 2vw, 20px);
+}
+
+.subtitle-hero {
+  font-family: "Jost-Regular";
+  font-weight: 300;
+  font-size: clamp(16px, 3vw, 20px);
+  width: clamp(285px, 35vw, 480px);
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 75px;
+}
+
+.button-to-sign-up {
+  font-family: "Jost-Regular";
+  font-weight: 300;
+  font-size: clamp(16px, 3vw, 18px);
+  padding: 25px 54px;
+  background-color: rgba(213, 32, 39, 1);
+  color: rgba(255, 255, 255, 1);
+  border-radius: 5px;
+  transition: 0.2s ease-in-out;
+}
+
+.button-to-sign-up:hover {
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(213, 32, 39, 1);
+}
+
+.hero-img img {
+  width: clamp(272px, 45vw, 784px);
+}
+.menu,
+.btn-call,
+.btn-menu,
+.cancel {
+  display: none;
+}
+/* WELCOME-PAGE END */
+
+main {
+  padding: clamp(60px, 16vw, 120px) 0px 0px 0px;
+}
+
+/* ABOUT-COURSE START */
+
+.about-course {
+  width: clamp(300px, 90vw, 1230px);
+  padding-bottom: clamp(60px, 16vw, 120px);
+  margin: 0 auto;
+}
+
+.about-text {
+  padding-bottom: clamp(40px, 5vw, 60px);
+}
+
+.about-text p {
+  font-family: "Jost-Regular";
+  font-weight: 300;
+  font-size: clamp(20px, 4vw, 30px);
+  width: clamp(280px, 62vw, 891px);
+}
+
+.name-course {
+  font-weight: bold;
+}
+
+.stats-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stats-item {
+  width: 260px;
+  list-style: none;
+  padding-right: clamp(10px, 40vw, 15px);
+}
+
+.stats-number {
+  font-family: "Jost-SemiBold";
+  font-weight: 600;
+  font-size: clamp(60px, 7vw, 70px);
+  color: rgba(213, 32, 39, 1);
+}
+
+.stats-text {
+  font-family: "Jost-Regular";
+  font-weight: 300;
+  font-size: 18px;
+  color: rgba(20, 16, 36, 0.7);
+}
+
+/* ABOUT-COURSE END */
+
+/* BENEFITS START */
+.benefits {
+  background-color: rgba(249, 249, 249, 1);
+  padding-bottom: clamp(40px, 9vw, 100px);
+  padding-top: clamp(40px, 9vw, 100px);
+}
+
+.benefits-container {
+  width: clamp(300px, 90vw, 1230px);
+  margin: 0 auto;
+}
+
+.benefits-title {
+  font-family: "Jost-SemiBold";
+  font-weight: 600;
+  font-size: clamp(30px, 7vw, 50px);
+  padding-bottom: clamp(40px, 5vw, 60px);
+}
+
+.benefits-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.benefits-item {
+  list-style: none;
+  padding-right: clamp(10px, 40vw, 40px);
+}
+.benefits-item h4 {
+  font-family: "Jost-SemiBold";
+  font-weight: 600;
+  font-size: clamp(20px, 4vw, 24px);
+  padding-bottom: clamp(10px, 4vw, 20px);
+}
+
+.benefits-item p {
+  font-family: "Jost-Regular";
+  font-weight: 300;
+  font-size: 18px;
+  color: rgba(20, 16, 36, 0.7);
+}
+
+.tooltip {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  margin-left: 6px;
+}
+
+.tooltip-text {
+  font-family: "Jost-Regular";
+  font-weight: 400;
+  position: absolute;
+  bottom: 140%;
+  left: 100%;
+  transform: translateX(-50%);
+
+  background: rgba(255, 255, 255, 1);
+  color: rgba(20, 16, 36, 1);
+  padding: 15px 20px;
+  border-radius: 6px;
+  font-size: 12px;
+  white-space: nowrap;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.2s;
+}
+
+.tooltip:hover .tooltip-text {
+  opacity: 1;
+  visibility: visible;
+}
+
+.icon-notification {
+  cursor: pointer;
+}
+
+/* BENEFITS END */
+
+/* COACHES START */
+.coaches {
+  position: relative;
+  padding-bottom: clamp(40px, 9vw, 120px);
+  padding-top: clamp(40px, 9vw, 120px);
+}
+
+.coaches-container {
+  width: clamp(300px, 90vw, 1230px);
+  margin: 0 auto;
+}
+
+.coaches-title {
+  font-family: "Jost-SemiBold";
+  font-weight: 600;
+  font-size: clamp(30px, 7vw, 50px);
+  padding-bottom: clamp(40px, 5vw, 60px);
+}
+
+.coaches-list {
+  width: clamp(300px, 91vw, 1440px);
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+}
+
+.coaches-list::-webkit-scrollbar {
+  height: 5px;
+  width: 200px;
+}
+
+.coaches-list::-webkit-scrollbar-track {
+  background: rgba(20, 16, 36, 0.08);
+  border-radius: 4px;
+  width: 130px;
+}
+
+.coaches-list::-webkit-scrollbar-thumb {
+  background-color: rgba(20, 16, 36, 1);
+  border-radius: 40px;
+  width: 0px;
+}
+
+.coaches-list::scroll-button(*) {
+  border: 0;
+  padding: 0;
+  text-align: end;
+  background: none;
+  cursor: pointer;
+  padding-top: 20px;
+  text-align: end;
+}
+
+.coaches-list::scroll-button(*):hover,
+.coaches-list::scroll-button(*):focus {
+  opacity: 1;
+}
+
+.coaches-list::scroll-button(*):active {
+  translate: 1px 1px;
+}
+
+.coaches-list::scroll-button(*):disabled {
+  opacity: 0.2;
+  cursor: unset;
+}
+.coaches-list::scroll-button(left) {
+  position: absolute;
+  margin-left: clamp(560px, 80.5vw, 1060px);
+  margin-right: 15px;
+  text-align: end;
+  content: url("../public/imgs/button-icons/btn-to-left.svg");
+}
+
+.coaches-list::scroll-button(right) {
+  margin-left: clamp(610px, 86vw, 1110px);
+  text-align: end;
+  content: url("../public/imgs/button-icons/btn-to-right.svg");
+}
+
+.coaches-item {
+  padding-bottom: clamp(40px, 5vw, 74px);
+  scroll-snap-align: center;
+  list-style: none;
+  padding-right: clamp(20px, 2vw, 40px);
+}
+
+.coaches-item:nth-last-child(1) {
+  padding-right: 0px;
+}
+.coach-img {
+  object-fit: cover;
+  border-radius: 20px;
+  width: clamp(220px, 23vw, 360px);
+  height: clamp(300px, 35vw, 500px);
+  margin-bottom: 20px;
+}
+
+.coach-name {
+  font-family: "Jost-SemiBold";
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+.coach-profession {
+  font-family: "Jost-Regular";
+  font-weight: 400;
+  color: rgba(20, 16, 36, 0.7);
+  padding-bottom: 20px;
+}
+
+.coach-btn {
+  font-family: "Jost-Regular";
+  font-weight: 400;
+  color: rgba(213, 32, 39, 1);
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.close-modal {
+  font-family: "Jost-Regular";
+  font-weight: 400;
+  color: rgba(20, 16, 36, 0.7);
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: clamp(300px, 75vw, 940px);
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: clamp(10px, 2vw, 20px);
+}
+
+.modal-content {
+  padding: clamp(20px, 5vw, 40px);
+  overflow-y: auto;
+}
+
+.modal-top {
+  justify-content: space-between;
+  padding-bottom: clamp(20px, 5vw, 40px);
+}
+
+.modal-top,
+.coach-info {
+  display: flex;
+}
+
+.modal .modal-img {
+  object-fit: cover;
+  width: clamp(60px, 16vw, 160px);
+  height: clamp(90px, 28vw, 222px);
+  margin-right: clamp(10px, 3vw, 40px);
+  border-radius: clamp(5px, 2vw, 20px);
+}
+
+.modal-coach-name {
+  font-family: "Jost-SemiBold";
+  font-weight: 600;
+  font-size: clamp(16px, 4vw, 24px);
+  padding-bottom: clamp(5px, 2vw, 20px);
+}
+
+.modal-coach-profession {
+  font-family: "Jost-Regular";
+  font-weight: 400;
+  color: rgba(20, 16, 36, 0.7);
+  font-size: clamp(11px, 2vw, 18px);
+  padding-bottom: clamp(10px, 2vw, 20px);
+}
+
+.close-btn-text {
+  font-family: "Jost-Regular";
+  font-weight: 400;
+  color: rgba(20, 16, 36, 0.7);
+  display: block;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.close-btn-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.coach-experience {
+  display: flex;
+}
+
+.coach-experience .coach-title {
+  font-family: "Jost-Regular";
+  font-weight: 400;
+  font-size: 20px;
+  margin-right: clamp(50px, 8vw, 180px);
+  text-decoration: none;
+  color: rgba(20, 16, 36, 1);
+}
+
+.select-option {
+  display: none;
+}
+
+.coach-title.active:focus {
+  color: rgba(213, 32, 39, 1);
+}
+
+.coach-experience .coach-title:nth-last-child(1) {
+  padding-right: 0px;
+}
+
+.modal-content hr {
+  margin: 20px 0px;
+  border: none;
+  border-top: 1px solid rgba(20, 16, 36, 0.08);
+}
+
+.coach-education {
+  height: clamp(100px, 40vw, 360px);
+  overflow-y: scroll;
+  background: linear-gradient(360deg, #c1c1c1 -60%, rgba(220, 220, 220, 0) 20%);
+}
+
+.coach-education::-webkit-scrollbar {
+  width: 5px;
+}
+
+.coach-education::-webkit-scrollbar-track {
+  background: rgba(20, 16, 36, 0.08);
+  border-radius: 5px;
+}
+
+.coach-education::-webkit-scrollbar-thumb {
+  background-color: rgba(20, 16, 36, 1);
+  border-radius: 40px;
+}
+
+.coach-education h3 {
+  font-family: "Jost-SemiBold";
+  font-weight: 600;
+  font-size: clamp(16px, 4vw, 24px);
+  padding-bottom: clamp(10px, 3vw, 20px);
+}
+
+.coach-education-info {
+  padding-bottom: clamp(20px, 5vw, 40px);
+}
+
+.coach-education-info p {
+  font-family: "Jost-Regular";
+  font-weight: 400;
+  font-size: clamp(14px, 3vw, 20px);
+  color: rgba(20, 16, 36, 1);
+}
+
+.coach-link-facebook {
+  margin-right: 10px;
+}
+
+/* COACHES END */
+
+/* PACKAGES START */
+
+.packages {
+  padding-bottom: clamp(40px, 9vw, 120px);
+}
+
+.packages-container {
+  width: clamp(300px, 90vw, 1230px);
+  text-align: center;
+  margin: 0 auto;
+}
+
+.packages-title {
+  font-family: "Jost-SemiBold";
+  font-weight: 600;
+  font-size: clamp(30px, 7vw, 50px);
+  padding-bottom: clamp(40px, 5vw, 60px);
+}
+
+.packages-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.packages-item {
+  border: 1px solid rgba(20, 16, 36, 0.2);
+  padding: 40px clamp(20px, 3vw, 40px);
+  list-style: none;
+  margin-right: clamp(5px, 40vw, 15px);
+  border-radius: 20px;
+  width: clamp(300px, 30vw, 380px);
+}
+
+.package {
+  width: 100%;
+  text-align: center;
+}
+
+.package .package-name {
+  padding-bottom: clamp(40px, 4vw, 83px);
+  font-family: "Jost-SemiBold";
+  font-weight: 600;
+  font-size: 30px;
+  color: rgba(20, 16, 36, 1);
+}
+
+.package .package-price {
+  display: flex;
+  font-family: "Jost-SemiBold";
+  font-weight: 600;
+  font-size: 50px;
+  color: rgba(20, 16, 36, 1);
+  padding-bottom: 20px;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.package .package-description {
+  padding-bottom: clamp(40px, 4vw, 52px);
+  font-family: "Jost-Regular";
+  font-weight: 400;
+  font-size: clamp(16px, 3vw, 18px);
+  color: rgba(20, 16, 36, 1);
+}
+
+.package .package-btn {
+  font-family: "Jost-Regular";
+  font-weight: 400;
+  padding: 17px 74px;
+  text-decoration: none;
+  background-color: rgba(213, 32, 39, 1);
+  color: rgba(255, 255, 255, 1);
+  font-size: clamp(16px, 3vw, 18px);
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.packages-item:nth-child(1) {
+  background-color: rgba(20, 16, 36, 1);
+}
+
+.packages-item:nth-child(1) .package {
+  border: none;
+}
+
+.packages-item:nth-child(1) .package .package-name {
+  font-family: "Jost-SemiBold";
+  font-weight: 600;
+  font-size: 30px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.packages-item:nth-child(1) .package .package-price {
+  font-family: "Jost-SemiBold";
+  font-weight: 600;
+  font-size: 50px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.packages-item:nth-child(1) .package .package-description {
+  font-family: "Jost-Regular";
+  font-weight: 400;
+  font-size: clamp(16px, 3vw, 18px);
+  color: rgba(255, 255, 255, 1);
+}
+
+.packages-item:nth-child(1) .package .package-btn {
+  font-family: "Jost-Regular";
+  font-weight: 400;
+  padding: 17px 74px;
+  text-decoration: none;
+  background-color: rgba(213, 32, 39, 1);
+  color: rgba(255, 255, 255, 1);
+  font-size: clamp(16px, 3vw, 18px);
+  width: 100%;
+}
+/* PACKAGES END */
+
+/* FORMS START */
+.forms {
+  background-image: url("../public/imgs/forms-backround-color.png");
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  width: clamp(300px, 90vw, 1170px);
+  margin: 0 auto;
+  padding: clamp(40px, 9vw, 87px) 0px;
+}
+
+.title-forms h2 {
+  font-family: "Jost-SemiBold";
+  font-weight: 600;
+  font-size: clamp(30px, 7vw, 36px);
+  padding-bottom: clamp(10px, 5vw, 20px);
+  width: clamp(300px, 74vw, 470px);
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 1);
+}
+
+.title-forms p {
+  font-family: "Jost-Regular";
+  font-weight: 400;
+  font-size: clamp(16px, 3vw, 20px);
+  color: rgba(255, 255, 255, 1);
+  width: clamp(250px, 74vw, 470px);
+  margin: 0 auto;
+}
+
+.fields-form {
+  display: flex;
+  flex-direction: column;
+  width: clamp(300px, 70vw, 500px);
+}
+
+.fields-form input {
+  font-family: "Jost-Regular";
+  font-weight: 400;
+  font-size: 18px;
+  padding: 19px;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.btn-form {
+  font-family: "Jost-Regular";
+  font-weight: 400;
+  padding: 19px 0px;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(20, 16, 36, 1);
+  border: none;
+  font-size: clamp(16px, 3vw, 18px);
+}
+
+/* FORMS END */
+
+/* FOOTER START */
+
+footer {
+  background-color: rgba(20, 16, 36, 1);
+}
+
+.footer-logo h2 {
+  padding-bottom: 5px;
+}
+
+.footer-logo p {
+  font-family: "Jost-Regular";
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-number a {
+  font-family: "Jost-SemiBold";
+  font-weight: 600;
+  flex-wrap: nowrap;
+  font-size: clamp(18px, 3vw, 30px);
+  color: rgba(255, 255, 255, 1);
+}
+
+.footer-container {
+  max-width: 1720px;
+  padding: 40px clamp(10px, 2vw, 100px);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* FOOTER END */
+
+@media (max-width: 768px) {
+  /* WELCOME-PAGE START */
+
+  body {
+    overflow: scroll;
+  }
+
+  body.active {
+    overflow-y: hidden;
+  }
+
+  .list,
+  .phone-number {
+    display: none;
+  }
+
+  .btn-active {
+    display: flex;
+  }
+
+  .btn-call,
+  .btn-menu {
+    display: block;
+    padding: 12px;
+    border: 1px solid;
+    background-color: rgb(31, 23, 62);
+    border-radius: 10px;
+    border: solid 1px white;
+  }
+
+  .btn-active a {
+    margin-right: 20px;
+  }
+
+  .btn-cancel {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .cancel {
+    display: flex;
+    padding: 12px;
+    background-color: rgb(31, 23, 62);
+    border-radius: 10px;
+    border: solid 1px white;
+    margin: 10px;
+  }
+
+  .menu.active {
+    display: block;
+    position: absolute;
+    background-color: rgba(20, 16, 36, 1);
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    height: 100%;
+  }
+
+  .list-for-mobile.active {
+    padding: 25px 25px;
+    text-align: end;
+    z-index: 101;
+  }
+
+  .list-for-mobile ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 100px;
+    justify-content: space-between;
+  }
+
+  .list-for-mobile ul li {
+    font-family: "Jost-SemiBold";
+    font-weight: 600;
+    list-style: none;
+    flex-wrap: wrap;
+    display: flex;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .main-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding-bottom: 0px;
+  }
+
+  .hero-text {
+    display: contents;
+    position: relative;
+  }
+
+  .title-hero {
+    order: 1;
+  }
+
+  .subtitle-hero {
+    order: 2;
+    margin-bottom: 10px;
+  }
+
+  .hero-img {
+    order: 3;
+  }
+
+  .button-to-sign-up {
+    position: absolute;
+    order: 4;
+    width: 95%;
+    bottom: -10px;
+  }
+  /* WELCOME-PAGE END */
+
+  /* ABOUT-COURSE START */
+
+  .about-course {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .stats {
+    max-width: 380px;
+    margin: 0 auto;
+  }
+
+  .stats-list {
+    width: 270px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .stats-item {
+    width: 270px;
+    list-style: none;
+    padding-right: 0px;
+    padding-bottom: 30px;
+  }
+
+  /* ABOUT-COURSE END */
+
+  /* BENEFITS START */
+  .benefits-title {
+    text-align: center;
+  }
+
+  .benefits-list {
+    display: block;
+    text-align: center;
+  }
+
+  .benefits-item {
+    padding-right: 0px;
+    padding-bottom: 30px;
+  }
+
+  .benefits-item:nth-child(3) {
+    padding-bottom: 0px;
+  }
+
+  /* BENEFITS END */
+
+  /* COACHES START */
+
+  .coaches-title {
+    text-align: center;
+  }
+
+  .close-btn-text {
+    display: none;
+  }
+
+  .close-btn-icon {
+    display: block;
+  }
+  .icon-close {
+    color: rgba(20, 16, 36, 1);
+    width: 25px;
+    height: 25px;
+  }
+
+  .coach-experience .coach-title {
+    display: none;
+  }
+  .select-option {
+    display: block;
+  }
+
+  .select-option {
+    font-family: "Jost-Regular";
+    font-weight: 400;
+    display: block;
+    background-color: rgba(213, 32, 39, 1);
+    padding: 10px 0px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .coaches-list::scroll-button(left) {
+    display: none;
+    position: absolute;
+    margin-left: clamp(560px, 80.5vw, 1060px);
+    margin-right: 15px;
+    text-align: end;
+    content: url("../public/imgs/button-icons/btn-to-left.svg");
+  }
+
+  .coaches-list::scroll-button(right) {
+    display: none;
+    margin-left: clamp(610px, 86vw, 1110px);
+    text-align: end;
+    content: url("../public/imgs/button-icons/btn-to-right.svg");
+  }
+
+  /* COACHES END */
+
+  /* PACKAGES START */
+  .packages-list {
+    display: block;
+    /* width: 300px; */
+    text-align: center;
+    /* margin: 0 auto; */
+    margin-right: 0px;
+  }
+
+  .packages-item {
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* PACKAGES END */
+
+  /* FORMS START */
+  .form-container {
+    display: block;
+    text-align: center;
+  }
+
+  .fields-form {
+    margin: 0 auto;
+  }
+
+  .title-forms p {
+    padding-bottom: 40px;
+  }
+  /* FORMS END */
+
+  /* FOOTER START */
+
+  .footer-container {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .left-footer-elements,
+  .right-footer-elements {
+    display: contents;
+  }
+
+  .footer-title {
+    margin-bottom: 20px;
+    order: 1;
+  }
+
+  .footer-subtitle {
+    order: 3;
+  }
+
+  .footer-number {
+    order: 2;
+    padding-bottom: 40px;
+  }
+
+  .footer-number {
+    display: block;
+  }
+  /* FOOTER END */
+}
