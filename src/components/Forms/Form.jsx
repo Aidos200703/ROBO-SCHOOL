@@ -16,14 +16,18 @@ export default function Form() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (formData.name.length === 0) {
+      return;
+    }
     console.log(formData);
+    alert("Заявка успешно отправлена!");
     setFormData({
       name: "",
       phoneNumber: "",
       email: "",
     });
-    alert("Заявка успешно отправлена!");
   };
+
   return (
     <form className="fields-form" onSubmit={handleSubmit}>
       <input
@@ -35,7 +39,7 @@ export default function Form() {
         value={formData.name}
       />
       <input
-        type="text"
+        type="tel"
         name="phoneNumber"
         placeholder="Ваш телефон"
         className="field-form"

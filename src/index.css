@@ -733,6 +733,7 @@ main {
   background-color: rgba(20, 16, 36, 1);
   border: none;
   font-size: clamp(16px, 3vw, 18px);
+  cursor: pointer;
 }
 
 /* FORMS END */
