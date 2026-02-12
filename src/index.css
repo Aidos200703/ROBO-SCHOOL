@@ -734,6 +734,7 @@ main {
   border: none;
   font-size: clamp(16px, 3vw, 18px);
   cursor: pointer;
+  border-radius: 5px;
 }
 
 /* FORMS END */
