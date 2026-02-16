@@ -1,7 +1,3 @@
-import iconCall from "../../../public/imgs/button-icons/call.svg";
-import iconMenu from "../../../public/imgs/button-icons/menu.svg";
-import iconCancel from "../../../public/imgs/button-icons/cancel.svg";
-import welcomePageImg from "../../../public/imgs/welcome-page-img.png";
 import { useEffect, useState } from "react";
 
 export default function Header() {
@@ -25,14 +21,25 @@ export default function Header() {
         </div>
         <div className="btn-active">
           <a href="tel:+78000001122">
-            <img className="btn-call" src={iconCall} alt="iconCall" />
+            <img
+              className="btn-call"
+              src="./imgs/button-icons/call.svg"
+              alt="iconCall"
+            />
           </a>
           <img
             className="btn-menu"
             id="btn-menu"
-            src={iconMenu}
+            src="./imgs/button-icons/menu.svg"
             alt="iconCall"
-            onClick={() => setIsOpen(!isOpen)}
+            onClick={() => {
+              setIsOpen(!isOpen);
+              const menu = document.getElementById("menu");
+              const cancel = document.getElementById("cancel");
+              menu.classList.toggle("active");
+              cancel.classList.add("active");
+              document.body.classList.add("active");
+            }}
           />
         </div>
         <div className={`menu ${isOpen ? "active" : ""}`} id="menu">
@@ -41,9 +48,14 @@ export default function Header() {
               <img
                 className="cancel"
                 id="cancel"
-                src={iconCancel}
+                src="./imgs/button-icons/cancel.svg"
                 alt="iconMenu"
-                onClick={() => setIsOpen(false)}
+                onClick={() => {
+                  setIsOpen(false);
+                  const menu = document.getElementById("menu");
+                  document.body.classList.remove("active");
+                  menu.classList.remove("active");
+                }}
               />
             </div>
             <ul>
@@ -89,7 +101,7 @@ export default function Header() {
           </a>
         </div>
         <div className="hero-img">
-          <img src={welcomePageImg} alt="welcome-page-img" />
+          <img src="./imgs/welcome-page-img.png" alt="welcome-page-img" />
         </div>
       </div>
     </div>

@@ -1,5 +1,3 @@
-import iconI from "../../../public/imgs/button-icons/icon(i).svg";
-
 export default function Benefits() {
   return (
     <section className="benefits">
@@ -24,7 +22,11 @@ export default function Benefits() {
             <h4 className="benefits-title">
               Практику
               <span className="tooltip">
-                <img className="icon-notification" src={iconI} alt="info" />
+                <img
+                  className="icon-notification"
+                  src="imgs/button-icons/icon(i).svg"
+                  alt="info"
+                />
                 <span className="tooltip-text">При наличии свободных мест</span>
               </span>
             </h4>
